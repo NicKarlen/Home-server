@@ -1,0 +1,19 @@
+{
+  "node-module-intellisense.scanBuiltinModules": true,
+  "node-module-intellisense.scanDevDependencies": true,
+  "node-module-intellisense.scanFileModules": true,
+  "node-module-intellisense.modulePaths": [],
+  "node-module-intellisense.fileModuleExtensions": [
+    ".js",
+    ".jsx",
+    ".ts",
+    ".d.ts",
+    ".tsx",
+    ".vue",
+    ".json"
+  ],
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
+  }
+}

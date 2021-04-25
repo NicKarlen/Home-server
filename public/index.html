@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Server ablage</title>
+
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Materialize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Bilder Repository</h1>
+    
+            </header>
+    
+            <div class="Controls" >
+                <button class="btn" onclick="saveFile()">Save</button>
+                <button class="btn" onclick="getFile()">getFile</button>
+            </div>
+
+            <h1>File upload</h1>
+            <form action="/uploads" method="POST" enctype="multipart/form-data">
+                <div class="file-field input-field">
+                  <div class="btn grey">
+                    <span>File</span>
+                    <input name="myImage" type="file">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                  </div>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+
+        <!-- JQuery from source: -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+                integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+                crossorigin="anonymous"></script>
+
+        <!-- Script from Materialize -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+        <script src="script.js"></script>
+    </body>
+</html>
