@@ -43,7 +43,7 @@ app.post('/uploads', (req, res) => {
             res.send(err)
         }else{
             console.log(req.file)
-            res.send('Picture is sent')
+            res.send('Picture is sent!!')
         }
     })
 })
