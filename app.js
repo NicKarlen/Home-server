@@ -20,7 +20,7 @@ app.get('/download', (req, res) => {
     })
 })
 
-// This is the link to the multer tutorial
+// This is the link to the multer tutorial, click below:
 //var TUTORIAL = 'https://www.youtube.com/watch?v=9Qzmri1WaaE'
 
 //Set up the storage engine for multer
