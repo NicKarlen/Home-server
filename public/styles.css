@@ -1,0 +1,11 @@
+
+img:hover {
+    cursor: pointer;
+}
+#IconAddFolder:hover{
+    cursor: pointer;
+}
+#NewFolderDiv *{
+    margin-bottom: 0;
+    margin-top: 0;    
+}

@@ -1,0 +1,6 @@
+next steps:
+
+- make the delete functionality work again for Images = DONE 
+- make a delete functionality for a whole folder with the images within = DONE
+      ¦
+      -----> (could make it prettier with a post request and then call createfunction on JSON response for no page reload)

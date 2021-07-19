@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Server ablage</title>
+
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Materialize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+           
+            <h2>Folder</h2>
+            <ul class="pagination" id="FolderUL">
+
+            </ul>
+            <div class="row" id="NewFolderDiv">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix" id="IconAddFolder" onclick="addNewFolder()">create_new_folder</i>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">Folder Name</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <h2>Upload</h2>
+            <form action="/multiUploads" method="POST" enctype="multipart/form-data" id="UploadForm">
+                <div class="file-field input-field">
+                  <div class="btn grey">
+                    <span>Files</span>
+                    <input name="myImages" type="file" multiple="multiple">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                  </div>
+                </div>
+                <button type="submit" class="btn" onclick="showProgressBar()">Submit</button>
+            </form>
+
+
+            <h2>Gallery</h2>
+            <div class="icon-preview col s6 m3"><i class="small material-icons" id="ziel">delete</i></div>
+            <div class="row" id="gallary">
+
+            </div>
+
+        </div>
+
+
+
+
+        <!-- JQuery from source: -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+                integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+                crossorigin="anonymous"></script>
+
+        <!-- Script from Materialize -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        
+
+        <script src="script.js"></script>
+    </body>
+</html>
